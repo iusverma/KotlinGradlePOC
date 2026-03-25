@@ -1,0 +1,13 @@
+app:
+  message: "Hello from DEV environment!"
+
+sf:
+  con_key: "<consumer_key_dev>"
+  url: "https://login.salesforce.dev.com"
+  user: "dev-user@sf.com"
+  jwt_token: "dev_token_20260325171026_gen"
+
+db:
+  connection: "jdbc:sqlserver://192.0.0.1:8080;databaseName=DEV;encrypt=true;trustServiceCertificate=true"
+  schema: "SF"
+  table_name: "temp_bulk_data"

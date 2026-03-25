@@ -1,0 +1,8 @@
+spring:
+  profiles:
+    active: dev
+
+db:
+  connection: ""
+  schema: "SF"
+  table_name: "temp_bulk_data"

@@ -1,0 +1,13 @@
+app:
+  message: "Hello from PROD environment!"
+
+sf:
+  con_key: "<consumer_key_sandbox>"
+  url: "https://login.salesforce.sandbox.com"
+  user: "sandbox-user@sf.com"
+  jwt_token: "sandbox_token_2503201625171300_enc"
+
+db:
+  connection: "jdbc:sqlserver://192.0.0.1:1919;databaseName=DEV;encrypt=true;trustServiceCertificate=true"
+  schema: "SF"
+  table_name: "temp_bulk_data"
