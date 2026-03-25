@@ -32,4 +32,19 @@ class MessageService(
         println("Schema: $schema")
         println("Table: $tableName")
     }
+
+    fun showProgressBar() {
+        val totalSteps = 20 // 5% each → 100% = 20 steps
+
+        for (i in 0..totalSteps) {
+            val percent = i * 5
+            val progress = "#".repeat(i)
+            val remaining = " ".repeat(totalSteps - i)
+
+            print("\rProgress: [$progress$remaining] $percent%")
+            Thread.sleep(5000) // 5 seconds
+        }
+
+        println("\nDone!")
+    }
 }

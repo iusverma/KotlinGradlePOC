@@ -10,4 +10,5 @@ fun main(args: Array<String>) {
     val context = runApplication<Application>(*args)
     val service = context.getBean(MessageService::class.java)
     service.printMessage()
+    service.showProgressBar()
 }
